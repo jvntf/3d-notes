@@ -1,8 +1,7 @@
-import HelloWorld from 'components/HelloWorld';
-import 'main.css';
+import 'main.css'
+import Viewport from './components/viewport'
 
-const main = async () => {
-    HelloWorld();
-}
-
-main().then(() => console.log('Started'));
+const vp = new Viewport()
+vp.start()
+window.vp = vp
+console.log(vp)
